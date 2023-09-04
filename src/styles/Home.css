@@ -1,9 +1,9 @@
 .home {
-    padding: 0 20px;
+    padding: 0 10%;
     max-width: 1000px;
     top: 0;
     height: 100vh;
-    margin: 0 10%;
+    background-color: #EFFBF8;
 }
 
 .home_inner {
@@ -35,7 +35,7 @@
     margin-top: 30px ;
     gap:10px
 }
-.buttons>button {
+.buttons>a {
     padding: 9px 40px;
     border-radius: 5px;
     outline: none;
@@ -45,13 +45,23 @@
     font-size: 16px;
 }
 
-.buttons>button:first-child {
+.buttons>a:first-child {
     background-color: #130F49;
     color: white;
 
 }
+.buttons>a:first-child:hover {
+    background-color: transparent;
+    color: #615E85;
+    border:1px solid #130F49;
 
-.buttons>button:last-child {
+}
+.buttons>a:last-child:hover {
+    background-color: #130F49;
+    color: white;
+
+}
+.buttons>a:last-child {
     background-color: transparent;
     color: #615E85;
     border:1px solid #130F49;
@@ -66,8 +76,14 @@
     color:#130F49;
     line-height: 30px;
     font-weight:500;
+    font-size: 16px;
     margin-bottom: 15px;
+}
+.contact-infos>div>a:hover{
+    color:#FF972D;
+    
 }
 .home-right-section>img {
     width: 100%;
+    border-radius: 50%;
 }

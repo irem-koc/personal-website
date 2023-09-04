@@ -1,9 +1,11 @@
-import React from 'react'
-import "./../styles/About.css"
+import React from "react";
+import "./../styles/About.css";
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+    return (
+        <div id="about">
+            <div>About</div>
+        </div>
+    );
+};
 
-export default About
+export default About;

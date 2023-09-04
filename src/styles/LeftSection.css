@@ -68,10 +68,14 @@
     width: 100%;
 
 }
-.left-menu>li:hover{
-    cursor: pointer;
+.left-menu>li>a{
+    color: #5F5C84
 }
-.left-menu>li:active{
+.left-menu>li>a:hover{
+    cursor: pointer;
+    color:#A5A6FF;
+}
+.left-menu>li>a.active{
     color:#A5A6FF
 }
 .left-menu>li {

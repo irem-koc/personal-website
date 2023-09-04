@@ -1,0 +1,76 @@
+.services {
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    
+    background-color: white;
+}
+
+
+.services_inner {
+
+    padding-top: 85px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.services-author-message {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.mail-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.get-in{
+    margin-top: 2px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #130F49;
+}
+/* Etiketin altındaki çizgiyi varsayılan olarak gizleyin */
+.services-mail {
+    position: relative;
+    color:#130F49;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.services-mail:after {
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF972D;;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.services-mail:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.services-box{
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

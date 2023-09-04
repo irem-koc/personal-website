@@ -1,0 +1,105 @@
+.service {
+    top: 0;
+    height: 35vh;
+    width: 25%;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 15px 0;
+}
+
+.service:hover {
+    transform: translateY(-0.6rem);
+    transition: 1.01s;
+    cursor: pointer;
+}
+
+.service_inner {
+
+    padding-top: 85px;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.service-author-message {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.service-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.service-get-in-the {
+    margin-bottom: 0;
+}
+
+.service-get-in {
+    font-size: 20px;
+    font-weight: 700;
+    color: #130F49;
+    bottom: 0;
+}
+
+.service-let {
+    color: #8987A4;
+    font-size: 20px;
+}
+
+.service-bottom {
+    color: #8987A4;
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.service-current {
+    color: #615E85;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.read-more {
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: 20px;
+    left: 35px;
+}
+
+.link {
+    color: #130F49;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+}
+.service {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .service-let::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Alt çizginin yüksekliği */
+    left: 0;
+    width: 0; /* Başlangıçta çizgi yok */
+    height: 2px; /* Alt çizginin kalınlığı */
+    background-color: blue; /* Alt çizgi rengi */
+    transition: width 0.3s ease; /* Geçiş süresi ve efekti */
+  }
+  
+  .service:hover .service-let::before {
+    width: 100%; /* Dıştaki div üzerine gelindiğinde alt çizgi sağa doğru genişlesin */
+  }
+  
