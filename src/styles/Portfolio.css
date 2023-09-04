@@ -23,7 +23,7 @@
 .portfolio-let {
     color: #615E85;
 }
-.portfolio-get-in{
+.portfolio-first-get-in{
     margin-top: 2px;
     font-size: 35px;
     font-weight: 700;
@@ -31,28 +31,109 @@
 }
 .images-section{
     padding-top: 20px;
-    max-width: 1000px;
+    width: 100%;
     margin: 0px auto;
-}
-.image-div{
-    top: 0;
-    height: 35vh;
-    width: 25%;
-    
-    border-radius: 4px;
-    padding: 35px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10px 15px 0;
-} 
-.images-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.image-section{
+.image-div{
+    top: 0;
+    height: 35vh;    
+    border-radius: 4px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 15px 0;
+} 
+.portfolio-get-in{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+    color: #130F49;
+    margin: 0;
+}
+
+.portfolio-get-in:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF972D;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.portfolio-get-in:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.image-bottom-section{
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
+}
+.image-bottom-section>a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #706D91;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+}
+.image-bottom-section>a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF972D;
+    ;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.image-bottom-section>a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.image-section{
+    margin-bottom: 30px;
+}
+.button{
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 101px;
+}
+.button>a {
+    padding: 9px 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: inline-flex;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.button>a:first-child {
+    background-color: #130F49;
+    color: white;
+
+}
+.button>a:first-child:hover {
+    background-color: transparent;
+    color: #615E85;
+    border:1px solid #130F49;
+
+}
+.arrow{
+    height: 27px;
 }

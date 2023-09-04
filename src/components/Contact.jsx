@@ -113,9 +113,9 @@ const Contact = () => {
                         frameBorder="0"
                         scrolling="no"
                         marginHeight="0"
-                        marginwWidth="0"
+                        marginwwidth="0"
                         
-                        alignSelf= 'center'
+                        alignself= 'center'
                         style={{ border: 0 }}
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
