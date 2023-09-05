@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     
-    background-color: white;
+    background-color: #FFF5F6;
 }
 
 .portfolio_inner {
@@ -114,7 +114,7 @@
     margin-bottom: 101px;
 }
 .button>a {
-    padding: 9px 40px;
+    padding: 13px 40px;
     border-radius: 5px;
     outline: none;
     border: none;
