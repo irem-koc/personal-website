@@ -13,7 +13,7 @@ const LeftSection = () => {
         <div className="left-sec">
             <div className="left-section">
                 <div className="author">
-                    <img className="irem-photo" src={image} alt="irem" />
+                    <img className="irem-photo" title="Irem Koc" src={image} alt="irem" />
                     <div>
                         <span className="big-irem">
                             Irem KOC{" "}
