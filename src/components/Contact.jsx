@@ -1,11 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import "./../styles/Contact.css";
 import { MouseContext } from "../context/mouse-context";
+import emailjs from '@emailjs/browser';
 // import ExamplePdf from "./../pdf/IremKocCV.pdf";
 const Contact = () => {
     const { setCursor } = useContext(MouseContext);
     const [name, setName] = useState("");
-
+    const form = useRef();
     const [mail, setMail] = useState("");
     const [message, setMessage] = useState("");
     const [isAlertVisible, setIsAlertVisible] = useState(false);
@@ -24,6 +25,12 @@ const Contact = () => {
         setName("");
         setMail("");
         setMessage("");
+        emailjs.sendForm('service_zau6pzj', 'template_4kfjmt5', form.current, 'yvwE0TUb1fcqRImzY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
     };
     return (
         <div className="contact" id="contact">
@@ -73,7 +80,7 @@ const Contact = () => {
                             </li>
                         </ul>
                     </div>
-                    <form onSubmit={handleSubmit} className="message-area">
+                    <form ref={form} onSubmit={handleSubmit} className="message-area">
                         {isAlertVisible && (
                             <div className="alert-container">
                                 <div className="alert-inner">
@@ -81,21 +88,21 @@ const Contact = () => {
                                 </div>
                             </div>
                         )}
-                        <input
+                        <input name="user_name"
                             formNoValidate="formNoValidate"
                             onChange={(e) => setName(e.target.value)}
                             value={name}
                             type="text"
                             placeholder="Enter your name"
                         />
-                        <input
+                        <input name="user_email"
                             formNoValidate="formNoValidate"
                             onChange={(e) => setMail(e.target.value)}
                             value={mail}
                             type="email"
                             placeholder="Your email"
                         />
-                        <textarea
+                        <textarea name="message"
                             onChange={(e) => setMessage(e.target.value)}
                             value={message}
                             cols="37"
